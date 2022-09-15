@@ -1,0 +1,13 @@
+/**
+ * @author windows
+ */
+public class Solution371{
+    
+    
+    
+    
+    
+    public static void main(String[] args) {
+        Solution371 solution371 = new Solution371();
+    }
+}
