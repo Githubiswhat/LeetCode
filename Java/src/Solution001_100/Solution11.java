@@ -1,6 +1,13 @@
 package Solution001_100;
 
 public class Solution11 {
+    public static void main(String[] args) {
+        Solution11 solution11 = new Solution11();
+        int[] nums = {1, 1};
+        int result = solution11.maxArea(nums);
+        System.out.println(result);
+    }
+
     public int maxArea(int[] height) {
         int left = 0, right = height.length - 1;
         int area = (right - left) * (height[left] < height[right] ? height[left] : height[right]);
@@ -34,12 +41,5 @@ public class Solution11 {
             }
         }
         return area;
-    }
-
-    public static void main(String[] args) {
-        Solution11 solution11 = new Solution11();
-        int[] nums = {1,1};
-        int result = solution11.maxArea(nums);
-        System.out.println(result);
     }
 }

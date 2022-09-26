@@ -10,7 +10,7 @@ public class Solution2 {
         int carry = 0;
         ListNode result = new ListNode();
         ListNode header = result;
-        while(l1 != null || l2 != null){
+        while (l1 != null || l2 != null) {
             int a = l1 != null ? l1.val : 0;
             int b = l2 != null ? l2.val : 0;
             int sum = (a + b + carry);

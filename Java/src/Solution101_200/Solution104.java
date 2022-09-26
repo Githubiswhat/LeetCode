@@ -5,7 +5,11 @@ import tool.TreeNode;
 /**
  * @author windows
  */
-public class Solution104{
+public class Solution104 {
+    public static void main(String[] args) {
+        Solution104 solution104 = new Solution104();
+    }
+
     public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
@@ -15,9 +19,5 @@ public class Solution104{
         left = maxDepth(root.left) + 1;
         right = maxDepth(root.right) + 1;
         return Math.max(left, right);
-    }
-
-    public static void main(String[] args) {
-        Solution104 solution104 = new Solution104();
     }
 }

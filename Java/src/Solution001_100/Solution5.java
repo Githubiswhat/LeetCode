@@ -39,8 +39,8 @@ public class Solution5 {
                         dp[i][j] = dp[i + 1][j - 1];
                     }
                 }
-                if (dp[i][j] && (j - i + 1> maxLen)) {
-                    maxLen = j - i + 1  ;
+                if (dp[i][j] && (j - i + 1 > maxLen)) {
+                    maxLen = j - i + 1;
                     begin = i;
                 }
             }

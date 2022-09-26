@@ -8,6 +8,12 @@ import java.util.Stack;
  */
 public class Solution20 {
 
+    public static void main(String[] args) {
+        Solution20 solution20 = new Solution20();
+        boolean valid = solution20.isValid("[[[[");
+        System.out.println(valid);
+    }
+
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack();
         HashMap<Character, Character> map = new HashMap<>();
@@ -15,12 +21,12 @@ public class Solution20 {
         map.put(']', '[');
         map.put(')', '(');
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '{' || s.charAt(i) == '[' || s.charAt(i) == '('){
+            if (s.charAt(i) == '{' || s.charAt(i) == '[' || s.charAt(i) == '(') {
                 stack.push(s.charAt(i));
-            }else {
+            } else {
                 if (stack.isEmpty()) {
                     return false;
-                }else {
+                } else {
                     Character character = map.get(s.charAt(i));
                     if (!character.equals(stack.pop())) {
                         return false;
@@ -28,16 +34,6 @@ public class Solution20 {
                 }
             }
         }
-        if (stack.isEmpty()){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    public static void main(String[] args) {
-        Solution20 solution20 = new Solution20();
-        boolean valid = solution20.isValid("[[[[");
-        System.out.println(valid);
+        return stack.isEmpty();
     }
 }

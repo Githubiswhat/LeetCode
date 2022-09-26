@@ -6,5 +6,4 @@ package Solution001_100;
 public class Solution48 {
 
 
-
 }

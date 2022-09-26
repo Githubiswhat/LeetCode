@@ -3,12 +3,9 @@ package Solution201_300;
 /**
  * @author windows
  */
-public class Solution255{
-    
-    
-    
-    
-    
+public class Solution255 {
+
+
     public static void main(String[] args) {
         Solution255 solution255 = new Solution255();
     }

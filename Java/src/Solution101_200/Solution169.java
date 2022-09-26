@@ -3,12 +3,9 @@ package Solution101_200;
 /**
  * @author windows
  */
-public class Solution169{
-    
-    
-    
-    
-    
+public class Solution169 {
+
+
     public static void main(String[] args) {
         Solution169 solution169 = new Solution169();
     }
