@@ -1,0 +1,11 @@
+package OfferSwardII;
+/**
+ * @author windows
+ */
+public class Solution18 {
+    
+    
+    public static void main(String[] args) {
+        Solution18 solution18 = new Solution18();
+    }
+}

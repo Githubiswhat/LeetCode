@@ -1,9 +1,9 @@
 package tool;
 
-import org.yaml.snakeyaml.Yaml;
-
-import java.io.*;
-import java.util.Map;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  * @author windows
@@ -24,35 +24,30 @@ public class FileGenerate {
 //        int end = Integer.parseInt(prop.getProperty("fileEnd"));
 
         //yaml
-        Yaml yaml = new Yaml();
-        InputStream inputStreamYaml = new BufferedInputStream(new FileInputStream("src/main/resources/file.yaml"));
-        Map<String, Object> map = yaml.load(inputStreamYaml);
-        String path = (String) map.get("path");
-        int begin = (int) map.get("fileBegin");
-        int end = (int) map.get("fileEnd");
+        String active = (String) YamlUtil.getValueByKey("file.yaml", "active", "active");
+        String path = (String) YamlUtil.getValueByKey("file.yaml", active, "path");
+        int begin = (int) YamlUtil.getValueByKey("file.yaml", active, "fileBegin");
+        int end = (int) YamlUtil.getValueByKey("file.yaml", active, "fileEnd");
+        boolean needFormat = (boolean) YamlUtil.getValueByKey("file.yaml", active, "needFormat");
 
-        String content = "package Solution%d_%d;    \n" +
-                "/**\n" +
-                " * @author windows\n" +
-                " */\n" +
-                "public class Solution%d {\n" +
-                "    \n" +
-                "    \n" +
-                "    public static void main(String[] args) {\n" +
-                "        Solution%d solution%d = new Solution%d();\n" +
-                "    }\n" +
-                "}";
-        path = String.format(path, begin, end);
+        String packageContent = String.format(FileGenerateContent.packageContent, active);
+        if (needFormat) {
+            path = String.format(path, begin, end);
+            packageContent = String.format(FileGenerateContent.packageSolutionContent, begin, end);
+        }
+        String content = packageContent + FileGenerateContent.content;
+
         File dir = new File(path);
         if (!dir.exists()) {
             dir.mkdirs();
         }
+
         for (int i = begin; i <= end; i++) {
             String fileName = path + "Solution" + i + ".java";
             File file = new File(fileName);
             if (!file.exists()) {
                 BufferedWriter out = new BufferedWriter(new FileWriter(file));
-                out.write(String.format(content, begin, end, i, i, i, i));
+                out.write(String.format(content, i, i, i, i));
                 out.close();
                 System.out.println("文件创建成功！");
             }

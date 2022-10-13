@@ -19,5 +19,13 @@ public class Node {
         val = _val;
         children = _children;
     }
-};
+
+    public int getVal() {
+        return val;
+    }
+
+    public List<Node> getChildren() {
+        return children;
+    }
+}
 
