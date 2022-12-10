@@ -1,0 +1,12 @@
+package QuestionBank.Solution001_100;
+
+/**
+ * @author windows
+ */
+public class Solution57 {
+
+
+    public static void main(String[] args) {
+        Solution57 solution57 = new Solution57();
+    }
+}

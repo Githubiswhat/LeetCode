@@ -1,6 +1,5 @@
 package LCP;
 
-import Solution2401_2500.Solution2418;
 import tool.TreeNode;
 
 import java.util.HashSet;
