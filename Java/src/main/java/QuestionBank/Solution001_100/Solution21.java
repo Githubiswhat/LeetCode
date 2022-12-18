@@ -2,34 +2,44 @@ package QuestionBank.Solution001_100;
 
 import tool.ListNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author windows
  */
 public class Solution21 {
 
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode head = new ListNode();
-        ListNode node = head;
-        while(list1 != null || list2 != null){
-            int a = list1 == null ? 101 : list1.val;
-            int b = list2 == null ? 101 : list2.val;
-            ListNode listNode = null;
-            if (a >= b){
-                listNode = new ListNode(b);
-                list2 = list2 == null ? null : list2.next;
-            }else{
-                listNode = new ListNode(a);
-                list1 = list1 == null ? null : list1.next;
-            }
-            node.next = listNode;
-            node = node.next;
-        }
-        return head.next;
+    public List<String> generateParenthesis(int n) {
+        int left = n;
+        int right = n;
+        List<String> res = new ArrayList<>();
+        dfs(res, n, n , new StringBuilder());
+        return res;
     }
+
+    private void dfs(List<String> res, int left, int right, StringBuilder sb){
+        if (left == right && left == 0){
+            res.add(sb.toString());
+        }
+        if (left > 0){
+            sb.append('(');
+            dfs(res, left - 1, right, sb);
+            sb.deleteCharAt(sb.length()- 1);
+        }
+        if (left < right) {
+            sb.append(')');
+            dfs(res, left, right - 1, sb);
+            sb.deleteCharAt(sb.length()- 1);
+        }
+    }
+
+
 
 
 
     public static void main(String[] args) {
         Solution21 solution21 = new Solution21();
+        System.out.println(solution21.generateParenthesis(3));
     }
 }
