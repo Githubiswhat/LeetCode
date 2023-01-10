@@ -3,8 +3,8 @@ package tool;
 /**
  * @author windows
  */
-public class ListGenerate {
-    public ListNode ListGenerate(int[] nums){
+public class ListNodeGenerate {
+    public static ListNode listNodeGenerate(int[] nums){
         ListNode head = new ListNode();
         ListNode node = head;
         for (int i = 0; i < nums.length; i++) {
