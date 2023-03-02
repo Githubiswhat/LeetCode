@@ -1,0 +1,14 @@
+//
+// Created by windows on 2023/3/2.
+//
+
+#ifndef C___SOLUTION721_H
+#define C___SOLUTION721_H
+
+
+class Solution721{
+
+};
+
+
+#endif //C___SOLUTION721_H

@@ -1,0 +1,14 @@
+//
+// Created by windows on 2023/3/2.
+//
+
+#ifndef C___SOLUTION2603_H
+#define C___SOLUTION2603_H
+
+
+class Solution2603{
+
+};
+
+
+#endif //C___SOLUTION2603_H
