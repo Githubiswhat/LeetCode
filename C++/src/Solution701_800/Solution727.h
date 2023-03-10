@@ -1,14 +1,15 @@
 //
-// Created by windows on 2023/3/2.
+// Created by windows on 2023/3/10.
 //
 
-#ifndef C___SOLUTION727_H
-#define C___SOLUTION727_H
+#ifndef C___SOLUTION_H
+#define C___SOLUTION_H
 
 
-class Solution727{
+class Solution{
 
 };
 
 
-#endif //C___SOLUTION727_H
+#endif //C___SOLUTION_H
+
