@@ -3,3 +3,19 @@
 //
 
 #include "Solution409.h"
+#include <unordered_map>
+
+int Solution409::longestPalindrome(string s) {
+    unordered_map<char, int> map;
+    for (char c : s) {
+        map[c]++;
+    }
+    int res = 0;
+    for(auto& [key, value] : map) {
+        res += value / 2 * 2;
+        if (value % 2 == 1 && res % 2 == 0){
+            res++;
+        }
+    }
+    return res;
+}

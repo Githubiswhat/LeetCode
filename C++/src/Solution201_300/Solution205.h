@@ -5,8 +5,13 @@
 #ifndef C___SOLUTION205_H
 #define C___SOLUTION205_H
 
+#include <string>
+
+using namespace std;
 
 class Solution205{
+public:
+    bool isIsomorphic(string s, string t);
 
 };
 

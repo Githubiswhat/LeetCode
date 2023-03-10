@@ -1,5 +1,6 @@
 HELP.md
 target/
+cmake-build-debug/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/

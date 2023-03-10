@@ -5,9 +5,12 @@
 #ifndef C___SOLUTION389_H
 #define C___SOLUTION389_H
 
+#include <string>
+using namespace std;
 
 class Solution389{
-
+public:
+    char findTheDifference(string s, string t);
 };
 
 

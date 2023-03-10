@@ -3,3 +3,8 @@
 //
 
 #include "Solution459.h"
+
+bool Solution459::repeatedSubstringPattern(string s) {
+
+
+}

@@ -5,8 +5,13 @@
 #ifndef C___SOLUTION387_H
 #define C___SOLUTION387_H
 
+#include <string>
+
+using namespace std;
 
 class Solution387{
+public:
+    int firstUniqChar(string s);
 
 };
 

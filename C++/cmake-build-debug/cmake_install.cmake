@@ -39,6 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("D:/Github/Repository/public/LeetCode/C++/cmake-build-debug/src/Offer/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("D:/Github/Repository/public/LeetCode/C++/cmake-build-debug/src/Solution1_100/cmake_install.cmake")
 endif()
 
@@ -185,6 +190,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("D:/Github/Repository/public/LeetCode/C++/cmake-build-debug/src/Solution2901_3000/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Github/Repository/public/LeetCode/C++/cmake-build-debug/src/Tool/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

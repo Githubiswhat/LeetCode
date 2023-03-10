@@ -5,8 +5,12 @@
 #ifndef C___SOLUTION58_H
 #define C___SOLUTION58_H
 
+#include <string>
+using namespace std;
 
 class Solution58{
+public:
+    int lengthOfLastWord(string s);
 
 };
 

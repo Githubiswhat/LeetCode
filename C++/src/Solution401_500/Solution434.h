@@ -5,8 +5,12 @@
 #ifndef C___SOLUTION434_H
 #define C___SOLUTION434_H
 
+#include <string>
+using namespace std;
 
 class Solution434{
+public:
+    int countSegments(string s);
 
 };
 

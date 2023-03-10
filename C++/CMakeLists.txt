@@ -3,6 +3,8 @@ project(C__)
 
 set(CMAKE_CXX_STANDARD 17)
 
+
+add_subdirectory(src/Offer)
 add_subdirectory(src/Solution1_100)
 add_subdirectory(src/Solution101_200)
 add_subdirectory(src/Solution201_300)
@@ -33,4 +35,4 @@ add_subdirectory(src/Solution2601_2700)
 add_subdirectory(src/Solution2701_2800)
 add_subdirectory(src/Solution2801_2900)
 add_subdirectory(src/Solution2901_3000)
-add_executable(main.cpp src/Tool/GenerateFiles.cpp src/Tool/GenerateFiles.h)
+add_subdirectory(src/Tool)

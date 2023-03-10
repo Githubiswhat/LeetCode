@@ -5,9 +5,12 @@
 #ifndef C___SOLUTION242_H
 #define C___SOLUTION242_H
 
+#include <string>
+using namespace std;
 
 class Solution242{
-
+public:
+    bool isAnagram(string s, string t);
 };
 
 
