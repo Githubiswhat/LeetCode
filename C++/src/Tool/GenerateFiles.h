@@ -19,6 +19,8 @@ public:
     int generate_files(int i, int j);
 
     void handle_h_file(int i, int j, string path);
+
+    void handle_h_fileV2(int i, int j, string path);
 };
 
 #endif //C___GENERATEFILES_H

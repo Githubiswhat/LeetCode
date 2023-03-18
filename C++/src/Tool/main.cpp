@@ -13,6 +13,39 @@ int main() {
 // =======================================
 
 
+// =====================Solution 5==================
+//#include <iostream>
+//#include "../Solution1_100/Solution5.h"
+//
+//int main() {
+//    Solution s;
+//    cout << s.longestPalindrome("uzhynqvopdbnkvuxizirzjsslptlhmvyfqhqvqffmqldkrrdwapbdcxqbchvxqixmvbbtalrgzvkobyxlkonkfknabjwzeoazankqzuhexhcwkbvwtioubrcujqqeqoedhploqklhgeilwwnndbnzeadzefkcvaxdhgnmocadvvzjocoweyoidhleuwhmavpdiizbwkukpstyorlwwyiwwyyyzqqgipzzlxsgcdjscdfvrrrqmllbdjkkuisxeqaprfblvjuixajhucmcvffmevaztvadrujbthlnsdrxzvbldwxbazxmilpkbccigkihcgjbtpvignmrgzdqnufaacxtihfgwrllrwgfhitxcaafunqdzgrmngivptbjgchikgiccbkplimxzabxwdlbvzxrdsnlhtbjurdavtzavemffvcmcuhjaxiujvlbfrpaqexsiukkjdbllmqrrrvfdcsjdcgsxlzzpigqqzyyywwiywwlroytspkukwbziidpvamhwuelhdioyewocojzvvdacomnghdxavckfezdaeznbdnnwwlieghlkqolphdeoqeqqjucrbuoitwvbkwchxehuzqknazaoezwjbankfknoklxybokvzgrlatbbvmxiqxvhcbqxcdbpawdrrkdlqmffqvqhqfyvmhltplssjzrizixuvknbdpovqnyhzu");
+//}
+// =======================================
+
+
+// =====================Solution 17==================
+//#include <iostream>
+//#include "../Solution1_100/Solution17.h"
+//
+//int main() {
+//    Solution s;
+//    s.letterCombinations("23");
+//}
+// =======================================
+
+
+// =====================Solution 22==================
+//#include <iostream>
+//#include "../Solution1_100/Solution22.h"
+//
+//int main() {
+//    Solution s;
+//    s.generateParenthesis(3);
+//}
+// =======================================
+
+
 // =====================Solution 392==================
 //#include <iostream>
 //#include "../Solution301_400/Solution392.h"
@@ -31,6 +64,17 @@ int main() {
 //int main() {
 //    Solution434 s;
 //    cout << s.countSegments("Hello, my name is John");
+//}
+// =======================================
+
+// =====================Solution 392==================
+//#include <iostream>
+//#include "../Solution401_500/Solution407.h"
+//
+//int main() {
+//    Solution s;
+//    vector<vector<int>> heightMap = {{3,3,3,3,3},{3,2,2,2,3},{3,2,1,2,3},{3,2,2,2,3},{3,3,3,3,3}};
+//    cout << s.trapRainWater(heightMap);
 //}
 // =======================================
 
@@ -73,5 +117,44 @@ int main() {
 //}
 // =======================================
 
+
+// =====================Solution 766==================
+//#include <iostream>
+//#include "../Solution701_800/Solution766.h"
+//
+//int main() {
+//    Solution s;
+//    vector<vector<int>> matrix = {{1,2,3,4},{5,1,2,3},{9,5,1,2}};
+//    cout << s.isToeplitzMatrix(matrix);
+//}
+// =======================================
+
+
+
+// =====================Solution 841==================
+//#include <iostream>
+//#include "../Solution801_900/Solution841.h"
+//
+//
+//int main() {
+//    Solution s;
+//    vector<vector<int>> matrix = {{1,3},{3,0,1},{2},{0}};
+//    s.canVisitAllRooms(matrix);
+//}
+// =======================================
+
+
+
+// =====================Solution 1616==================
+//#include <iostream>
+//#include "../Solution1601_1700/Solution1616.h"
+//
+//int main() {
+//    Solution s;
+//    string s1 = "pvhmupgqeltozftlmfjjde";
+//    string s2 = "yjgpzbezspnnpszebzmhvp";
+//    s.checkPalindromeFormation(s1, s2);
+//}
+// =======================================
 
 

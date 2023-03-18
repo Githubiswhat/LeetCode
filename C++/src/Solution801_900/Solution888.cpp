@@ -3,3 +3,23 @@
 //
 
 #include "Solution888.h"
+#include <unordered_set>
+
+vector<int> Solution::fairCandySwap(vector<int> &aliceSizes, vector<int> &bobSizes) {
+    int aliceSum = 0, bobSum = 0;
+    unordered_set<int> set;
+    for (int num : aliceSizes) {
+        aliceSum += num;
+        set.insert(num);
+    }
+    for (int num : bobSizes) {
+        bobSum += num;
+    }
+    int sub = bobSum - aliceSum;
+    for (int num : bobSizes) {
+        if (set.count(num + sub)){
+            return {num + sub, num};
+        }
+    }
+    return {-1, -1};
+}

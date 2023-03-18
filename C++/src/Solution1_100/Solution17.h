@@ -5,8 +5,13 @@
 #ifndef C___SOLUTION_H
 #define C___SOLUTION_H
 
+#include <string>
+#include <vector>
+using namespace std;
 
 class Solution{
+public:
+    vector<string> letterCombinations(string digits);
 
 };
 

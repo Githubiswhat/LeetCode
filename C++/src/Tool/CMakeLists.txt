@@ -1,5 +1,7 @@
 # 构建可执行文件
-add_executable(Tool main.cpp GenerateFiles.h GenerateFiles.cpp)
+file(GLOB SOURCES "*.cpp" "*.h")
+add_executable(Tool ${SOURCES})
+
 
 set(LIBRARY
         Solution1_100
