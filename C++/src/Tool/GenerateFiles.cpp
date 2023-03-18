@@ -149,14 +149,15 @@ void GenerateFiles::handle_h_fileV2(int i, int j, string path) {
                              "\n"
                              "\n"
                              "#endif //C___SOLUTION_H"
+                             "\n"
                              "\n";
 
         string context_new = "//\n"
                              "// Created by windows on 2023/3/10.\n"
                              "//\n"
                              "\n"
-                             "#ifndef C___SOLUTION_H" + to_string(i) + "\n"
-                             "#define C___SOLUTION_H" + to_string(i) + "\n"
+                             "#ifndef C___SOLUTION" + to_string(i) + "_H\n"
+                             "#define C___SOLUTION" + to_string(i) + "_H\n"
                              "\n"
                              "\n"
                              "class Solution{\n"
@@ -164,8 +165,10 @@ void GenerateFiles::handle_h_fileV2(int i, int j, string path) {
                              "};\n"
                              "\n"
                              "\n"
-                             "#endif //C___SOLUTION_H" + to_string(i) + ""
+                             "#endif //C___SOLUTION" + to_string(i) + "_H"
+                             "\n"
                              "\n";
+
         string content; //用于存储文件内容的字符串
         string line; //用于读取每一行的字符串
         while (getline(infile, line)) { //循环读取每一行
@@ -197,10 +200,11 @@ int GenerateFiles::generate_files(int i, int j) {
         } else {
             std::cout << "Failed to create directory." << std::endl;
         }
-        create_cpp_file(i, i + 99, str);
-        create_h_file(i, i + 99, str);
+//        create_cpp_file(i, i + 99, str);
+//        create_h_file(i, i + 99, str);
 //        create_CMake_file(i, i + 99 ,str);
 //        handle_h_file(i, i + 99, str);
+        handle_h_fileV2(i, i + 99, str);
     }
     return 0;
 }
