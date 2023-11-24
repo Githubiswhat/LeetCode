@@ -3,13 +3,13 @@
 //
 
 // ===================== GenerateFile ==================
-#include <iostream>
-#include "GenerateFiles.h"
-
-int main() {
-    GenerateFiles g;
-    g.generate_files(1, 3000);
-}
+//#include <iostream>
+//#include "GenerateFiles.h"
+//
+//int main() {
+//    GenerateFiles g;
+//    g.generate_files(1, 3000);
+//}
 // =======================================
 
 
@@ -144,6 +144,18 @@ int main() {
 // =======================================
 
 
+// =====================Solution 1012==================
+//#include <iostream>
+//#include "../Solution1001_1100/Solution1012.h"
+//
+//int main() {
+//    Solution s;
+//    int a = s.numDupDigitsAtMostN(20);
+//    std::cout << a;
+//}
+// =======================================
+
+
 
 // =====================Solution 1616==================
 //#include <iostream>
@@ -154,6 +166,20 @@ int main() {
 //    string s1 = "pvhmupgqeltozftlmfjjde";
 //    string s2 = "yjgpzbezspnnpszebzmhvp";
 //    s.checkPalindromeFormation(s1, s2);
+//}
+// =======================================
+
+
+
+// =====================Solution 1626==================
+//#include <iostream>
+//#include "../Solution1601_1700/Solution1626.h"
+//
+//int main() {
+//    Solution s;
+//    vector<int> scores{4,5,6,5};
+//    vector<int> ages{2,1,2,1};
+//    cout << s.bestTeamScore(scores, ages);
 //}
 // =======================================
 

@@ -1,7 +1,7 @@
 # 构建可执行文件
-file(GLOB SOURCES "*.cpp" "*.h")
+file(GLOB SOURCES "*.cpp")
 add_executable(Tool ${SOURCES})
-
+target_include_directories(Tool PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 set(LIBRARY
         Solution1_100
@@ -36,5 +36,5 @@ set(LIBRARY
         Solution2901_3000
         )
 
-# 添加库文件链接
+## 添加库文件链接
 target_link_libraries(Tool PRIVATE ${LIBRARY})
