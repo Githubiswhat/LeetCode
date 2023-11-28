@@ -3,3 +3,27 @@
 //
 
 #include "Solution557.h"
+
+#include <string>
+using namespace std;
+
+string reverseWords(string s) {
+  int start = 0;
+  string result = "";
+  for (int i = 0; i < s.length(); ++i) {
+    if (s[i] == ' '){
+      string str = s.substr(start, i - start);
+      for (int j = str.size() - 1; j >= 0 ; --j) {
+        result += str[j];
+      }
+      result += ' ';
+      start = i + 1;
+    }
+  }
+
+  string str = s.substr(start, s.size());
+  for (int j = str.size() - 1; j >= 0 ; --j) {
+    result += str[j];
+  }
+  return result;
+}
