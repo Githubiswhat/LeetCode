@@ -5,8 +5,32 @@
 #ifndef C___SOLUTION1670_H
 #define C___SOLUTION1670_H
 
+#include <deque>
+using namespace std;
 
-class Solution{
+class FrontMiddleBackQueue{
+
+private:
+  deque<int> left;
+  deque<int> right;
+
+public:
+
+  FrontMiddleBackQueue();
+
+  void pushFront(int val);
+
+  void pushMiddle(int val);
+
+  void pushBack(int val);
+
+  int popFront();
+
+  int popMiddle();
+
+  int popBack();
+
+
 
 };
 
