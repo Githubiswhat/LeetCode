@@ -3,3 +3,12 @@
 //
 
 #include "Solution2707.h"
+#include "string"
+#include "vector"
+using namespace std;
+
+int minExtraChar(string s, vector<string>& dictionary) {
+ 
+
+
+}

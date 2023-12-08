@@ -3,6 +3,9 @@ D:/Resource/Github/LeetCode/C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 D:/Resource/Github/LeetCode/C++/cmake-build-debug/src/Offer/CMakeFiles/Offer.dir
 D:/Resource/Github/LeetCode/C++/cmake-build-debug/src/Offer/CMakeFiles/edit_cache.dir
 D:/Resource/Github/LeetCode/C++/cmake-build-debug/src/Offer/CMakeFiles/rebuild_cache.dir
+D:/Resource/Github/LeetCode/C++/cmake-build-debug/src/LCR/CMakeFiles/LCR.dir
+D:/Resource/Github/LeetCode/C++/cmake-build-debug/src/LCR/CMakeFiles/edit_cache.dir
+D:/Resource/Github/LeetCode/C++/cmake-build-debug/src/LCR/CMakeFiles/rebuild_cache.dir
 D:/Resource/Github/LeetCode/C++/cmake-build-debug/src/Solution1_100/CMakeFiles/Solution1_100.dir
 D:/Resource/Github/LeetCode/C++/cmake-build-debug/src/Solution1_100/CMakeFiles/edit_cache.dir
 D:/Resource/Github/LeetCode/C++/cmake-build-debug/src/Solution1_100/CMakeFiles/rebuild_cache.dir

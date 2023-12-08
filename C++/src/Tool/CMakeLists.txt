@@ -4,6 +4,8 @@ add_executable(Tool ${SOURCES})
 target_include_directories(Tool PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 set(LIBRARY
+        Offer
+        LCR
         Solution1_100
         Solution101_200
         Solution201_300
