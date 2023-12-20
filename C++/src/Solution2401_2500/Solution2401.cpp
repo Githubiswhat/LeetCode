@@ -3,3 +3,7 @@
 //
 
 #include "Solution2401.h"
+#include "vector"
+
+using namespace std;
+

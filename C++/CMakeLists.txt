@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 
 add_subdirectory(src/Offer)
+add_subdirectory(src/LCP)
 add_subdirectory(src/LCR)
 add_subdirectory(src/Solution1_100)
 add_subdirectory(src/Solution101_200)

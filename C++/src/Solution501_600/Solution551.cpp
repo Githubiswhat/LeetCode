@@ -3,3 +3,27 @@
 //
 
 #include "Solution551.h"
+#include "string"
+using namespace std;
+
+bool checkRecord(string s) {
+  int countA = 0;
+  int countL = 0;
+  for (const auto &item : s){
+    if (item == 'A'){
+      countA++;
+    }
+    if (item == 'L'){
+      if (countL > 0){
+        countL++;
+      } else{
+        countL = 1;
+      }
+    }else{
+      if (countL < 3){
+        countL = 0;
+      }
+    }
+  }
+  return countA < 2 && countL < 3;
+}

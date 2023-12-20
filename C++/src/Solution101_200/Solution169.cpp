@@ -4,6 +4,7 @@
 
 #include "Solution169.h"
 
+
 int Solution169::majorityElement(vector<int> &nums) {
     int num = nums[0];
     int ticket = 1;
@@ -19,3 +20,6 @@ int Solution169::majorityElement(vector<int> &nums) {
     }
     return num;
 }
+
+
+
