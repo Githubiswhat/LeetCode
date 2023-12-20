@@ -2,7 +2,7 @@
 // Created by windows on 2023/12/19.
 //
 
-#include "Solution6.h"
+#include "include/Solution6.h"
 #include "vector"
 using namespace std;
 

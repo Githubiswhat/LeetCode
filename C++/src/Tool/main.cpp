@@ -185,20 +185,20 @@
 
 
 // =====================Solution 1670 ==================
-#include <iostream>
-#include "../Solution1601_1700/include/Solution1670.h"
-
-int main() {
-    FrontMiddleBackQueue s;
-    s.pushFront(1);
-    s.pushFront(2);
-    s.pushFront(3);
-    s.pushFront(4);
-    cout << s.popBack()  << "  ";
-    cout << s.popBack()  << "  ";
-    cout << s.popBack()  << "  ";
-    cout << s.popBack()  << "  ";
-}
+//#include <iostream>
+//#include "../Solution1601_1700/include/Solution1670.h"
+//
+//int main() {
+//    FrontMiddleBackQueue s;
+//    s.pushFront(1);
+//    s.pushFront(2);
+//    s.pushFront(3);
+//    s.pushFront(4);
+//    cout << s.popBack()  << "  ";
+//    cout << s.popBack()  << "  ";
+//    cout << s.popBack()  << "  ";
+//    cout << s.popBack()  << "  ";
+//}
 // =======================================
 
 
