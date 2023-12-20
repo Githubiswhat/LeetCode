@@ -3,13 +3,14 @@
 //
 
 #include "Solution6.h"
-#include "vector"
+#include <vector>
+using namespace std;
 using namespace std;
 
-int minCount(vector<int>& coins) {
+int minCount(vector<int> &coins) {
   int count = 0;
-  for (const auto &item : coins){
-    count += item / 2  + item % 2;
+  for (const auto &item : coins) {
+    count += item / 2 + item % 2;
   }
   return count;
 }

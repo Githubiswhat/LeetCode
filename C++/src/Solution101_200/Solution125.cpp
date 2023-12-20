@@ -3,6 +3,12 @@
 //
 
 #include "Solution125.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 bool Solution125::isPalindrome(string s) {
     int i = 0, j = s.size() - 1;

@@ -4,6 +4,12 @@
 
 #include <iostream>
 #include "Solution747.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution::dominantIndex(vector<int> &nums) {
     int max_value = 0;

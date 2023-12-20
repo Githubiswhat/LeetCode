@@ -3,6 +3,12 @@
 //
 
 #include "Solution1630.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 vector<bool> Solution::checkArithmeticSubarrays(vector<int> &nums, vector<int> &l, vector<int> &r) {
     int n = l.size();

@@ -3,6 +3,12 @@
 //
 
 #include "Solution1638.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution::countSubstrings(string s, string t) {
     int m = s.size();

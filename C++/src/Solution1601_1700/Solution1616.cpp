@@ -3,6 +3,12 @@
 //
 
 #include "Solution1616.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 inline bool isPalindrome(string a){
     int n = a.length();

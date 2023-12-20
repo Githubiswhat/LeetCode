@@ -3,6 +3,12 @@
 //
 
 #include "Solution219.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <unordered_map>
 
 bool Solution219::containsNearbyDuplicate(vector<int> &nums, int k) {

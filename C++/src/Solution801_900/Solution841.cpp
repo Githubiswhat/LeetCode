@@ -3,6 +3,12 @@
 //
 
 #include "Solution841.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <queue>
 
 bool Solution::canVisitAllRooms(vector<vector<int>> &rooms) {

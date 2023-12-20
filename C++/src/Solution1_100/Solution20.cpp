@@ -3,6 +3,12 @@
 //
 
 #include "Solution20.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <stack>
 #include <unordered_map>
 

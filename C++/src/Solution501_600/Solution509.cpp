@@ -3,6 +3,12 @@
 //
 
 #include "Solution509.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int fib(int n) {
   if (n == 0){

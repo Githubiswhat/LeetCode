@@ -3,6 +3,12 @@
 //
 
 #include "Solution1893.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <algorithm>
 
 bool Solution1893::isCovered(vector<vector<int>> &ranges, int left, int right) {

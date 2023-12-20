@@ -3,6 +3,12 @@
 //
 
 #include "Solution2389.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <algorithm>
 
 vector<int> Solution::answerQueries(vector<int> &nums, vector<int> &queries) {

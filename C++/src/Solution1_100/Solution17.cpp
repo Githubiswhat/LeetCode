@@ -3,6 +3,12 @@
 //
 
 #include "Solution17.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <unordered_map>
 void dfs(string str, vector<string>& res, int n, unordered_map<char, string>& map, string& digits){
     if (str.length() == n){

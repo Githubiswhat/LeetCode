@@ -3,6 +3,12 @@
 //
 
 #include "Solution599.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <unordered_map>
 
 vector<string> Solution599::findRestaurant(vector<string> &list1, vector<string> &list2) {

@@ -3,6 +3,12 @@
 //
 
 #include "Solution1.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 vector<int> Solution1::twoSum(vector<int> &nums, int target) {
     unordered_map<int, int> hash_table;

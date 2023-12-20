@@ -3,6 +3,12 @@
 //
 
 #include "Solution1615.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <unordered_map>
 
 int Solution::maximalNetworkRank(int n, vector<vector<int>> &roads) {

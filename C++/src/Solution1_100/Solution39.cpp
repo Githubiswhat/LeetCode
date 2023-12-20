@@ -3,6 +3,12 @@
 //
 
 #include "Solution39.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <algorithm>
 #include <vector>
 using namespace std;

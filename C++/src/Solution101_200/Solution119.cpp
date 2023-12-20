@@ -3,6 +3,12 @@
 //
 
 #include "Solution119.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 vector<int> Solution119::getRow(int rowIndex) {
     vector<int> res{1};

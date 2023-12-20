@@ -3,6 +3,12 @@
 //
 
 #include "Solution101.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 bool Solution101::isSymmetric(TreeNode *root) {
     if (root == nullptr){

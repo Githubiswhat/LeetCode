@@ -3,6 +3,12 @@
 //
 
 #include "Solution407.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <algorithm>
 #include <queue>
 typedef pair<int,int> pii;

@@ -3,6 +3,12 @@
 //
 
 #include "Solution303.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 NumArray::NumArray(vector<int> &nums) {
     int n = nums.size();

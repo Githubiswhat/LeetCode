@@ -3,6 +3,12 @@
 //
 
 #include "Solution766.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 bool Solution::isToeplitzMatrix(vector<vector<int>> &matrix) {
     int m = matrix.size(), n = matrix[0].size();

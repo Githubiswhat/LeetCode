@@ -3,6 +3,12 @@
 //
 
 #include "Solution485.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution485::findMaxConsecutiveOnes(vector<int> &nums) {
     int max = 0;

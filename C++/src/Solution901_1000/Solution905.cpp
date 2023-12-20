@@ -3,6 +3,12 @@
 //
 
 #include "Solution905.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 vector<int> Solution::sortArrayByParity(vector<int> &nums) {
     int n = nums.size();

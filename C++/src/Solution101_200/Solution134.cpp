@@ -3,6 +3,12 @@
 //
 
 #include "Solution134.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution::canCompleteCircuit(vector<int> &gas, vector<int> &cost) {
     int i = 0;

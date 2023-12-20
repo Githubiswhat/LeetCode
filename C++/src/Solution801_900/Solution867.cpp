@@ -3,6 +3,12 @@
 //
 
 #include "Solution867.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 vector<vector<int>> Solution::transpose(vector<vector<int>> &matrix) {
     int m = matrix.size();

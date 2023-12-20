@@ -3,6 +3,12 @@
 //
 
 #include "Solution1012.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <bits/stdc++.h>
 
 int Solution::numDupDigitsAtMostN(int n) {

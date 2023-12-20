@@ -3,6 +3,12 @@
 //
 
 #include "Solution643.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 double Solution643::findMaxAverage(vector<int> &nums, int k) {
     double sum = 0;

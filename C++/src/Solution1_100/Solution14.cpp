@@ -3,6 +3,12 @@
 //
 
 #include "Solution14.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 string Solution14::longestCommonPrefix(vector<string> &strs) {
     string res = "";

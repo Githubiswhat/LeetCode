@@ -3,6 +3,12 @@
 //
 
 #include "Solution2488.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include "unordered_map"
 
 inline int sign(int num){

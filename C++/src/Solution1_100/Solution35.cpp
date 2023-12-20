@@ -3,6 +3,12 @@
 //
 
 #include "Solution35.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution35::searchInsert(vector<int> &nums, int target) {
     int left = 0;

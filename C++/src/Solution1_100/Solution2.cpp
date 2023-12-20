@@ -3,6 +3,12 @@
 //
 
 #include "Solution2.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 ListNode *Solution2::addTwoNumbers(ListNode *l1, ListNode *l2) {
     int carry = 0;

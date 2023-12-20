@@ -3,6 +3,12 @@
 //
 
 #include "Solution598.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution598::maxCount(int m, int n, vector<vector<int>> &ops) {
     for (vector<int> op: ops) {

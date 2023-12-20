@@ -3,6 +3,12 @@
 //
 
 #include "Solution412.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 vector<string> Solution412::fizzBuzz(int n) {
     vector<string> res;

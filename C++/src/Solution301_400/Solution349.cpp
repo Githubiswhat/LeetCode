@@ -3,6 +3,12 @@
 //
 
 #include "Solution349.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <unordered_set>
 
 vector<int> Solution349::intersection(vector<int> &nums1, vector<int> &nums2) {

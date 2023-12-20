@@ -3,6 +3,12 @@
 //
 
 #include "Solution566.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 vector<vector<int>> Solution566::matrixReshape(vector<vector<int>> &mat, int r, int c) {
     int m = mat.size();

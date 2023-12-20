@@ -3,6 +3,12 @@
 //
 
 #include "Solution1894.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution1894::chalkReplacer(vector<int> &chalk, int k) {
     int n = chalk.size();

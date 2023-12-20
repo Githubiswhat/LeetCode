@@ -3,6 +3,12 @@
 //
 
 #include "Solution257.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 vector<string> Solution257::binaryTreePaths(TreeNode *root) {
     vector<string> res;

@@ -3,6 +3,12 @@
 //
 
 #include "Trie.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 void Trie::insert(string &w) {
     Trie* node = this;

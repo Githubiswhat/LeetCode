@@ -3,6 +3,12 @@
 //
 
 #include "Solution118.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 vector<vector<int>> Solution118::generate(int numRows) {
     vector<vector<int>> ans;

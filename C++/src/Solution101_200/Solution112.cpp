@@ -3,6 +3,12 @@
 //
 
 #include "Solution112.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 bool Solution112::hasPathSum(TreeNode *root, int targetSum) {
     return dfs(root, targetSum, 0);

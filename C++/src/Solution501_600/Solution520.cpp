@@ -3,6 +3,12 @@
 //
 
 #include "Solution520.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 bool Solution520::detectCapitalUse(string word) {
     int n = word.length();

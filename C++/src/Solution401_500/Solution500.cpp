@@ -3,6 +3,12 @@
 //
 
 #include "Solution500.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <unordered_set>
 
 vector<string> Solution500::findWords(vector<string> &words) {

@@ -3,6 +3,12 @@
 //
 
 #include "Solution704.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution704::search(vector<int> &nums, int target) {
     int left = 0, right = nums.size() - 1;

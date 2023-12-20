@@ -3,6 +3,12 @@
 //
 
 #include "Solution58.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution58::lengthOfLastWord(string s) {
     int len = 0;

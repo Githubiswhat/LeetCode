@@ -3,6 +3,12 @@
 //
 
 #include "Solution744.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 char Solution::nextGreatestLetter(vector<char> &letters, char target) {
     int n = letters.size();

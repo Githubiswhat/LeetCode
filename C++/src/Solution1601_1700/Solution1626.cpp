@@ -3,6 +3,12 @@
 //
 
 #include "Solution1626.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <algorithm>
 
 int Solution::bestTeamScore(vector<int> &scores, vector<int> &ages) {

@@ -3,6 +3,12 @@
 //
 
 #include "Solution415.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 string Solution415::addStrings(string num1, string num2) {
     int i = num1.length() - 1, j = num2.length() - 1;

@@ -3,6 +3,12 @@
 //
 
 #include "Solution242.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <unordered_map>
 
 bool Solution242::isAnagram(string s, string t) {

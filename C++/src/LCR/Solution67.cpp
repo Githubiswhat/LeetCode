@@ -3,11 +3,13 @@
 //
 
 #include "Solution67.h"
+#include <iostream>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
+using namespace std;
 #include "vector"
 using namespace std;
 
-
-int findMaximumXOR(vector<int>& nums) {
-
-
-}
+int findMaximumXOR(vector<int> &nums) {}

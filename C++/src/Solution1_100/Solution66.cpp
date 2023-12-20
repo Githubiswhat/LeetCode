@@ -3,6 +3,12 @@
 //
 
 #include "Solution66.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 vector<int> Solution66::plusOne(vector<int> &digits) {
     for (int i = digits.size() - 1; i >= 0; i--) {

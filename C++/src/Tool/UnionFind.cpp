@@ -3,6 +3,12 @@
 //
 
 #include "UnionFind.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 UnionFind::UnionFind(int n) {
     parent.resize(n);

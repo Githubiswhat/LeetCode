@@ -3,6 +3,12 @@
 //
 
 #include "Solution892.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution::surfaceArea(vector<vector<int>> &grid) {
     int n = grid.size();

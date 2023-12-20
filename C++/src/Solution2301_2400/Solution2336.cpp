@@ -3,6 +3,12 @@
 //
 
 #include "Solution2336.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <algorithm>
 #include <deque>
 using namespace std;

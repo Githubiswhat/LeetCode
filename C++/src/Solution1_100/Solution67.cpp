@@ -3,6 +3,12 @@
 //
 
 #include "Solution67.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 string Solution67::addBinary(string a, string b) {
     int carry = 0;

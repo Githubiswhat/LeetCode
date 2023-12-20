@@ -3,6 +3,12 @@
 //
 
 #include "Solution27.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution27::removeElement(vector<int> &nums, int val) {
     int i = 0;

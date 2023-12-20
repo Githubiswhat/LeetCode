@@ -3,6 +3,12 @@
 //
 
 #include "Solution171.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 int Solution171::titleToNumber(string columnTitle) {
     int result = 0;

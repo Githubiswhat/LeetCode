@@ -3,6 +3,12 @@
 //
 
 #include "Solution496.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <unordered_map>
 
 #include "stack"

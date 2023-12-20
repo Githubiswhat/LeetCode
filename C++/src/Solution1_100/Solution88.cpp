@@ -3,6 +3,12 @@
 //
 
 #include "Solution88.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 void Solution88::merge(vector<int> &nums1, int m, vector<int> &nums2, int n) {
     int i = m - 1;

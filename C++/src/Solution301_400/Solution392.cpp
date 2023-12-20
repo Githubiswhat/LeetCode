@@ -3,6 +3,12 @@
 //
 
 #include "Solution392.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 
 bool Solution392::isSubsequence(string s, string t) {
     int i = 0, j = 0;

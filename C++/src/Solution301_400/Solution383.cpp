@@ -3,6 +3,12 @@
 //
 
 #include "Solution383.h"
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+using namespace std;
 #include <unordered_map>
 
 bool Solution383::canConstruct(string ransomNote, string magazine) {
