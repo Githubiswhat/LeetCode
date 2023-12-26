@@ -4,8 +4,22 @@
 
 #include "Solution1046.h"
 #include <iostream>
-#include <vector>
-#include <unordered_set>
-#include <unordered_map>
+#include <queue>
 #include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
 using namespace std;
+
+
+int lastStoneWeight(vector<int>& stones) {
+  priority_queue<int> queue(stones.begin(), stones.end());
+  while (queue.size() > 1){
+    int a = queue.top();
+    queue.pop();
+    int b = queue.top();
+    queue.pop();
+    queue.push(abs(a - b));
+  }
+  return queue.top();
+}

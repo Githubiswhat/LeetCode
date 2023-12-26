@@ -9,3 +9,14 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+int repeatedNTimes(vector<int>& nums) {
+  unordered_set<int> set;
+  for (const auto &item : nums){
+    if (set.count(item) != 0){
+      return item;
+    }
+    set.emplace(item);
+  }
+  return -1;
+}

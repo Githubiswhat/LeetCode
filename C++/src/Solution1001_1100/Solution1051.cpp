@@ -3,9 +3,23 @@
 //
 
 #include "Solution1051.h"
+#include <algorithm>
 #include <iostream>
-#include <vector>
-#include <unordered_set>
-#include <unordered_map>
 #include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
 using namespace std;
+
+
+int heightChecker(vector<int>& heights) {
+  vector<int> res(heights);
+  sort(heights.begin(), heights.end());
+  int count = 0;
+  for (int i = 0; i < heights.size(); ++i) {
+    if (res[i] != heights[i]){
+      count++;
+    }
+  }
+  return count;
+}

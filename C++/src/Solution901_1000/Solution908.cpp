@@ -3,9 +3,20 @@
 //
 
 #include "Solution908.h"
+#include <algorithm>
 #include <iostream>
-#include <vector>
-#include <unordered_set>
-#include <unordered_map>
 #include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
 using namespace std;
+
+
+int smallestRangeI(vector<int>& nums, int k) {
+  int max = *max_element(nums.begin(), nums.end());
+  int min = *min_element(nums.begin(), nums.end());
+  if (max - min <= 2 * k){
+    return 0;
+  }
+  return max - min - 2 * k;
+}
