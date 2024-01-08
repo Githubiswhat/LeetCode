@@ -9,3 +9,10 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+string toLowerCase(string s) {
+  for (auto &item : s){
+    item = tolower(item);
+  }
+  return s;
+}

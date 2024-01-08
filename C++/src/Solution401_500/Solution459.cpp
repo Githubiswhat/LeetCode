@@ -13,3 +13,10 @@ using namespace std;
 bool Solution459::repeatedSubstringPattern(string s) {
     return true;
 }
+
+bool repeatedSubstringPattern(string s) {
+
+
+
+
+}

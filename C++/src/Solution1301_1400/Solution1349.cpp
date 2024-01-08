@@ -3,46 +3,44 @@
 //
 
 #include "Solution1349.h"
+#include <cstring>
 #include <iostream>
-#include <vector>
-#include <unordered_set>
-#include <unordered_map>
 #include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
 using namespace std;
 #include "vector"
 using namespace std;
 
-
 int maxStudents(vector<vector<char>>& seats) {
-  int m = seats.size();
-  int n = seats[0].size();
+  int m = seats.size(), n = seats[0].size();
+  int dp[m + 1][1 << n];
+  memset(dp, 0, sizeof(dp));
 
-  int count = 0;
-  for (int i = 0; i < m; ++i) {
+  int res = 0;
+  int lastMax = 0;
+  for (int i = 1; i <= m; ++i) {
+    int curr = 0;
     for (int j = 0; j < n; ++j) {
-      if (seats[i][j] == '.') {
-        count++;
-        seats[i][j] = '#';
-        if (j - 1 >= 0 ){
-          if (i - 1 >= 0){
-            seats[i - 1][j - 1] = '#';
+      curr |= ((seats[i - 1][j] == '.') << j);
+    }
+
+    for (int t = curr; t > 0; t = (t - 1) & curr) {
+      // 排除左右有人的情况
+      if ((t & (t << 1)) == 0 && (t & (t >> 1)) == 0) { // 修正条件判断的括号问题
+        int count = __builtin_popcount(t);
+
+        for (int j = 0; j < (1 << n); ++j) {
+          if ((t & (j << 1)) == 0 && (t & (j >> 1)) == 0) { // 修正条件判断的括号问题
+            dp[i][t] = max(dp[i][t], dp[i - 1][j] + count); // 更新状态
+            res = max(res, dp[i][t]); // 更新最大值
           }
-          if (i + 1 < m){
-            seats[i + 1][j - 1] = '#';
-          }
-          seats[i][j - 1] = '#';
-        }
-        if (j + 1 < n){
-          if (i - 1 >= 0){
-            seats[i - 1][j + 1] = '#';
-          }
-          if (i + 1 < m){
-            seats[i + 1][j + 1] = '#';
-          }
-          seats[i][j + 1] = '#';
         }
       }
     }
+    dp[i][0] = lastMax;
+    lastMax = res;
   }
-  return count;
+  return res;
 }

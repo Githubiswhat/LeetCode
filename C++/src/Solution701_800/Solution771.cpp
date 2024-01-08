@@ -9,3 +9,15 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+
+int numJewelsInStones(string jewels, string stones) {
+  unordered_set<char> set(jewels.begin(), jewels.end());
+  int count = 0;
+  for (const auto &item : stones){
+    if (set.count(item) != 0){
+      count++;
+    }
+  }
+  return count;
+}
