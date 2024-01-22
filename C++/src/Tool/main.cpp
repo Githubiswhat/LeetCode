@@ -5,12 +5,12 @@
 // ===================== GenerateFile ==================
 //#include <iostream>
 //#include "GenerateFiles.h"
-#include <iostream>
-#include <vector>
-#include <unordered_set>
-#include <unordered_map>
-#include <string>
-using namespace std;
+//#include <iostream>
+//#include <vector>
+//#include <unordered_set>
+//#include <unordered_map>
+//#include <string>
+//using namespace std;
 //
 //int main() {
 //    GenerateFiles g;
@@ -207,4 +207,25 @@ using namespace std;
 //}
 // =======================================
 
+
+#include <iostream>
+
+void printPointer(int* ptr) {
+  std::cout << "Inside function:" << std::endl;
+  std::cout << "Pointer's address: " << &ptr << std::endl;  // 打印指针本身的地址
+  std::cout << "Pointer's value (address it points to): " << ptr << std::endl;  // 打印指针所指向的地址
+}
+
+int main() {
+  int num = 42;
+  int* ptr = &num;
+
+  std::cout << "Outside function:" << std::endl;
+  std::cout << "Pointer's address: " << &ptr << std::endl;  // 打印指针本身的地址
+  std::cout << "Pointer's value (address it points to): " << ptr << std::endl;  // 打印指针所指向的地址
+
+  printPointer(ptr);  // 调用函数并传递指针
+
+  return 0;
+}
 

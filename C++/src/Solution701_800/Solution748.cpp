@@ -35,7 +35,7 @@ string shortestCompletingWord(string licensePlate, vector<string>& words) {
     bool flag = true;
     for (int i = 0; i < 26; ++i) {
       if (chars[i] > charsTemp[i]){
-        flag = false;se;
+        flag = false;
         break;
       }
     }

@@ -24,4 +24,3 @@ int numberOfBoomerangs(vector<vector<int>> &points) {
   }
   return ans;
 }
-};

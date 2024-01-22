@@ -1,8 +1,8 @@
 //
-// Created by windows on 2023/3/2.
+// Created by windows on 2024/1/16.
 //
 
-#include "Solution233.h"
+#include "include/Solution1702.h"
 #include <cstring>
 #include <functional>
 #include <iostream>
@@ -12,28 +12,27 @@
 #include <vector>
 using namespace std;
 
-
-int countDigitOne(int n) {
+int numberOf2sInRange(int n) {
   auto s = to_string(n);
   int m = s.size(), memo[m][m];
   memset(memo, -1, sizeof(memo));
 
-  function<int(int,int,bool)> f = [&](int i, int sum ,bool limit)-> int {
+  function<int(int, int, bool)> f = [&](int i, int sum, bool limit) -> int {
     if (i == m){
       return sum;
     }
-    if (!limit && memo[i][sum] != -1){
+    if (!limit && memo[i][sum] != -1)
       return memo[i][sum];
-    }
     int res = 0;
-    int up = limit ? s[i] - '0' : 9;
+    int  up = limit ? s[i] - '0' : 9;
     for (int d = 0; d <= up; ++d) {
-      res += f(i + 1, sum + (d == 1), limit && d == up);
+      res += f(i + 1, sum + (d == 2), limit && d == up);
     }
-    if (!limit){
-      memo[i][sum] = res;
-    }
+    if (!limit)
+      memo[i][sum]= res;
     return res;
   };
   return f(0, 0, true);
 }
+
+
