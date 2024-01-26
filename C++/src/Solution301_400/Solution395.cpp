@@ -9,3 +9,10 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+
+int longestSubstring(string s, int k) {
+
+
+
+}

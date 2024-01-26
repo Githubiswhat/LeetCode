@@ -15,8 +15,9 @@ using namespace std;
 
 int countDigitOne(int n) {
   auto s = to_string(n);
-  int m = s.size(), memo[m][m];
-  memset(memo, -1, sizeof(memo));
+  int m = s.size();
+  vector<vector<int>> memo(m, vector<int>(m, 0));
+//  memset(memo, -1, sizeof(memo));
 
   function<int(int,int,bool)> f = [&](int i, int sum ,bool limit)-> int {
     if (i == m){

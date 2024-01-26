@@ -10,17 +10,36 @@
 #include <string>
 using namespace std;
 
-int Solution::maxArea(vector<int> &height) {
-    int n = height.size();
-    int left = 0, right = n - 1;
-    int total = min(height[left], height[right]) * (right - left);
-    while(left < right) {
-        if (height[left] >= height[right]) {
-            right--;
-        }else if (height[left] < height[right]){
-            left++;
-        }
-        total = max(total, min(height[left], height[right]) * (right - left));
+//int Solution::maxArea(vector<int> &height) {
+//    int n = height.size();
+//    int left = 0, right = n - 1;
+//    int total = min(height[left], height[right]) * (right - left);
+//    while(left < right) {
+//        if (height[left] >= height[right]) {
+//            right--;
+//        }else if (height[left] < height[right]){
+//            left++;
+//        }
+//        total = max(total, min(height[left], height[right]) * (right - left));
+//    }
+//    return total;
+//}
+
+
+int maxArea(vector<int>& height) {
+  int n = height.size();
+  int left = 0, right = n - 1;
+  int res = 0;
+  while (left < right){
+    res = max(res, min(height[left], height[right]) * (right - left));
+    if (height[left] < height[right]){
+      left++;
+    }else{
+      right--;
     }
-    return total;
+  }
+  res = max(res, min(height[left], height[right]) * (right - left));
+  return res;
 }
+
+
