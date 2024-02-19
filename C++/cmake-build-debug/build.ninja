@@ -151,6 +151,13 @@ build src/LCP/CMakeFiles/LCP.dir/Solution123.cpp.obj: CXX_COMPILER__LCP_unscanne
   OBJECT_DIR = src\LCP\CMakeFiles\LCP.dir
   OBJECT_FILE_DIR = src\LCP\CMakeFiles\LCP.dir
 
+build src/LCP/CMakeFiles/LCP.dir/Solution24.cpp.obj: CXX_COMPILER__LCP_unscanned_Debug D$:/Resource/Github/LeetCode/C++/src/LCP/Solution24.cpp || cmake_object_order_depends_target_LCP
+  DEP_FILE = src\LCP\CMakeFiles\LCP.dir\Solution24.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/Resource/Github/LeetCode/C++/src/LCP/include
+  OBJECT_DIR = src\LCP\CMakeFiles\LCP.dir
+  OBJECT_FILE_DIR = src\LCP\CMakeFiles\LCP.dir
+
 build src/LCP/CMakeFiles/LCP.dir/Solution6.cpp.obj: CXX_COMPILER__LCP_unscanned_Debug D$:/Resource/Github/LeetCode/C++/src/LCP/Solution6.cpp || cmake_object_order_depends_target_LCP
   DEP_FILE = src\LCP\CMakeFiles\LCP.dir\Solution6.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
@@ -173,7 +180,7 @@ build src/LCP/CMakeFiles/LCP.dir/Solution88.cpp.obj: CXX_COMPILER__LCP_unscanned
 #############################################
 # Link the static library src\LCP\libLCP.a
 
-build src/LCP/libLCP.a: CXX_STATIC_LIBRARY_LINKER__LCP_Debug src/LCP/CMakeFiles/LCP.dir/Solution123.cpp.obj src/LCP/CMakeFiles/LCP.dir/Solution6.cpp.obj src/LCP/CMakeFiles/LCP.dir/Solution88.cpp.obj
+build src/LCP/libLCP.a: CXX_STATIC_LIBRARY_LINKER__LCP_Debug src/LCP/CMakeFiles/LCP.dir/Solution123.cpp.obj src/LCP/CMakeFiles/LCP.dir/Solution24.cpp.obj src/LCP/CMakeFiles/LCP.dir/Solution6.cpp.obj src/LCP/CMakeFiles/LCP.dir/Solution88.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src\LCP\CMakeFiles\LCP.dir
   POST_BUILD = cd .
@@ -239,6 +246,13 @@ build src/LCR/CMakeFiles/LCR.dir/Solution13.cpp.obj: CXX_COMPILER__LCR_unscanned
   OBJECT_DIR = src\LCR\CMakeFiles\LCR.dir
   OBJECT_FILE_DIR = src\LCR\CMakeFiles\LCR.dir
 
+build src/LCR/CMakeFiles/LCR.dir/Solution30.cpp.obj: CXX_COMPILER__LCR_unscanned_Debug D$:/Resource/Github/LeetCode/C++/src/LCR/Solution30.cpp || cmake_object_order_depends_target_LCR
+  DEP_FILE = src\LCR\CMakeFiles\LCR.dir\Solution30.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/Resource/Github/LeetCode/C++/src/LCR/include
+  OBJECT_DIR = src\LCR\CMakeFiles\LCR.dir
+  OBJECT_FILE_DIR = src\LCR\CMakeFiles\LCR.dir
+
 build src/LCR/CMakeFiles/LCR.dir/Solution5.cpp.obj: CXX_COMPILER__LCR_unscanned_Debug D$:/Resource/Github/LeetCode/C++/src/LCR/Solution5.cpp || cmake_object_order_depends_target_LCR
   DEP_FILE = src\LCR\CMakeFiles\LCR.dir\Solution5.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
@@ -282,7 +296,7 @@ build src/LCR/CMakeFiles/LCR.dir/Solution88.cpp.obj: CXX_COMPILER__LCR_unscanned
 #############################################
 # Link the static library src\LCR\libLCR.a
 
-build src/LCR/libLCR.a: CXX_STATIC_LIBRARY_LINKER__LCR_Debug src/LCR/CMakeFiles/LCR.dir/Solution121.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution123.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution13.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution5.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution6.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution67.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution69.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution88.cpp.obj
+build src/LCR/libLCR.a: CXX_STATIC_LIBRARY_LINKER__LCR_Debug src/LCR/CMakeFiles/LCR.dir/Solution121.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution123.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution13.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution30.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution5.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution6.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution67.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution69.cpp.obj src/LCR/CMakeFiles/LCR.dir/Solution88.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src\LCR\CMakeFiles\LCR.dir
   POST_BUILD = cd .
