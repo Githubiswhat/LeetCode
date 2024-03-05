@@ -3,6 +3,7 @@
 //
 
 #include "Solution748.h"
+#include <functional>
 #include <cstring>
 #include <iostream>
 #include <map>

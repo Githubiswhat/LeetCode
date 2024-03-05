@@ -4,6 +4,7 @@
 
 //#include "Solution2581.h"
 #include <functional>
+#include <functional>
 #include <iostream>
 #include <set>
 #include <string>

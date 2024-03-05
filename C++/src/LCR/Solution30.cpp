@@ -3,6 +3,7 @@
 //
 
 #include "include/Solution30.h"
+#include <functional>
 #include <algorithm>
 #include <iostream>
 #include <numeric>

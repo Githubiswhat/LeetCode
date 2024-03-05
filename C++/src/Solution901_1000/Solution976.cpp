@@ -3,6 +3,7 @@
 //
 
 #include "Solution976.h"
+#include <functional>
 #include <algorithm>
 #include <iostream>
 #include <string>

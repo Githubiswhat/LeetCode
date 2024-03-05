@@ -3,6 +3,7 @@
 //
 
 //#include "Solution2673.h"
+#include <functional>
 #include <iostream>
 #include <string>
 #include <unordered_map>

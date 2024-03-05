@@ -3,6 +3,7 @@
 //
 
 #include "Solution1686.h"
+#include <functional>
 #include <algorithm>
 #include <iostream>
 #include <numeric>

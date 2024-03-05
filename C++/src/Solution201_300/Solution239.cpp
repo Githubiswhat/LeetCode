@@ -3,6 +3,7 @@
 //
 
 //#include "Solution239.h"
+#include <functional>
 #include <algorithm>
 #include <deque>
 #include <iostream>

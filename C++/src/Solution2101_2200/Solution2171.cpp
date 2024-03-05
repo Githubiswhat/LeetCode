@@ -3,6 +3,7 @@
 //
 
 #include "Solution2171.h"
+#include <functional>
 #include <algorithm>
 #include <iostream>
 #include <string>

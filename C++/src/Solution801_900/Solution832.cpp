@@ -3,6 +3,7 @@
 //
 
 #include "Solution832.h"
+#include <functional>
 #include <algorithm>
 #include <iostream>
 #include <string>

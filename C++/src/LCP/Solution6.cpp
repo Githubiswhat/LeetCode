@@ -3,6 +3,7 @@
 //
 
 #include "include/Solution6.h"
+#include <functional>
 #include <vector>
 using namespace std;
 using namespace std;

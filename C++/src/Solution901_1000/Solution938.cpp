@@ -4,6 +4,7 @@
 
 #include "Solution938.h"
 #include <functional>
+#include <functional>
 #include <iostream>
 #include <string>
 #include <unordered_map>

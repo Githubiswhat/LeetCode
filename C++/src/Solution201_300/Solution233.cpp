@@ -3,6 +3,7 @@
 //
 
 #include "Solution233.h"
+#include <functional>
 #include <cstring>
 #include <functional>
 #include <iostream>

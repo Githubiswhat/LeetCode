@@ -3,6 +3,7 @@
 //
 
 #include "Solution1944.h"
+#include <functional>
 #include <iostream>
 #include <stack>
 #include <string>

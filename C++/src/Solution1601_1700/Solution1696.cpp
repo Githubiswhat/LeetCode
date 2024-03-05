@@ -3,6 +3,7 @@
 //
 
 //#include "Solution1696.h"
+#include <functional>
 #include <iostream>
 #include <queue>
 #include <string>

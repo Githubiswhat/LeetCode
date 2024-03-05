@@ -3,6 +3,7 @@
 //
 
 #include "Solution715.h"
+#include <functional>
 #include <iostream>
 #include <vector>
 #include <unordered_set>

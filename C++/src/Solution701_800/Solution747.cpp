@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "Solution747.h"
+#include <functional>
 #include <iostream>
 #include <vector>
 #include <unordered_set>

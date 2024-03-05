@@ -3,6 +3,7 @@
 //
 
 #include "Solution696.h"
+#include <functional>
 #include <iostream>
 #include <stack>
 #include <string>

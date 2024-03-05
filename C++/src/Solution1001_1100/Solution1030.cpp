@@ -3,6 +3,7 @@
 //
 
 #include "Solution1030.h"
+#include <functional>
 #include <iostream>
 #include <queue>
 #include <string>

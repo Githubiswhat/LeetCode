@@ -4,6 +4,7 @@
 
 #include "Solution2641.h"
 #include <functional>
+#include <functional>
 #include <iostream>
 #include <map>
 #include <string>

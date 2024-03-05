@@ -3,6 +3,7 @@
 //
 
 #include "Solution2904.h"
+#include <functional>
 #include <algorithm>
 #include <iostream>
 #include <map>

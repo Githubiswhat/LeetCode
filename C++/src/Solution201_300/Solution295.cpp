@@ -3,6 +3,7 @@
 //
 
 #include "Solution295.h"
+#include <functional>
 #include <iostream>
 #include <queue>
 #include <string>

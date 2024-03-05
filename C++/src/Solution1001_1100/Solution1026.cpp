@@ -3,6 +3,7 @@
 //
 
 #include "Solution1026.h"
+#include <functional>
 #include <iostream>
 #include <vector>
 #include <unordered_set>

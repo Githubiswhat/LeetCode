@@ -3,6 +3,7 @@
 //
 
 #include "include/Solution88.h"
+#include <functional>
 #include <vector>
 using namespace std;
 

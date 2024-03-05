@@ -3,6 +3,7 @@
 //
 
 #include "Solution1046.h"
+#include <functional>
 #include <iostream>
 #include <queue>
 #include <string>

@@ -3,6 +3,7 @@
 //
 
 #include "include/CppFileModifier.h"
+#include <functional>
 #include <iostream>
 #include <vector>
 #include <unordered_set>
@@ -67,15 +68,16 @@ void traverseAndModifyFiles(const std::string& directoryPath, const std::string&
 
 #include <unordered_set>
 
-//int main() {
-//  std::string folderPath = "D:\\Resource\\Github\\LeetCode\\C++\\src"; // 替换为你的文件夹路径
-//  std::string searchString = "#include \""; // 要寻找的字符串
+int main() {
+  std::string folderPath = "D:\\Resource\\Github\\LeetCode\\C++\\src"; // 替换为你的文件夹路径
+  std::string searchString = "#include \""; // 要寻找的字符串
 //  std::string newString = "#include <iostream>\n#include <vector>\n#include <unordered_set>\n#include <unordered_map>\n#include <string>\nusing namespace std;"; // 要插入的新字符串
-//
-//  traverseAndModifyFiles(folderPath, searchString, newString); // 开始遍历文件夹并修改文件
-//
-//  std::cout << "操作完成！" << std::endl;
-//
-//  return 0;
-//}
+  std::string newString = "#include <functional>"; // 要插入的新字符串
+
+  traverseAndModifyFiles(folderPath, searchString, newString); // 开始遍历文件夹并修改文件
+
+  std::cout << "操作完成！" << std::endl;
+
+  return 0;
+}
 

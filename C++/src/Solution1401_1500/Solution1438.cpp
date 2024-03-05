@@ -3,6 +3,7 @@
 //
 
 #include "Solution1438.h"
+#include <functional>
 #include <deque>
 #include <iostream>
 #include <string>

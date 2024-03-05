@@ -3,6 +3,7 @@
 //
 
 #include "Solution521.h"
+#include <functional>
 #include <cstring>
 #include <iostream>
 #include <string>

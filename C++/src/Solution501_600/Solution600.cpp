@@ -3,6 +3,7 @@
 //
 
 #include "Solution600.h"
+#include <functional>
 #include <bitset>
 #include <cstring>
 #include <functional>

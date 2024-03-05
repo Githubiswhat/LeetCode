@@ -3,6 +3,7 @@
 //
 
 #include "Solution1349.h"
+#include <functional>
 #include <cstring>
 #include <iostream>
 #include <string>

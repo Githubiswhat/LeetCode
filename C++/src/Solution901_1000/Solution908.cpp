@@ -3,6 +3,7 @@
 //
 
 #include "Solution908.h"
+#include <functional>
 #include <algorithm>
 #include <iostream>
 #include <string>

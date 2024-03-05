@@ -3,6 +3,7 @@
 //
 
 #include "include/Solution123.h"
+#include <functional>
 #include <cstring>
 using namespace std;
 

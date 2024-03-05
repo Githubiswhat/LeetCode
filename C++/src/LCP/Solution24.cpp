@@ -3,6 +3,7 @@
 //
 
 #include "Solution24.h"
+#include <functional>
 #include <iostream>
 #include <queue>
 #include <string>
