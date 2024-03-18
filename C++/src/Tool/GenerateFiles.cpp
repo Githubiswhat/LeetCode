@@ -45,7 +45,7 @@ void GenerateFiles::create_h_file(int i, int j, string path) {
             continue;
         }
         string context = "//\n"
-                         "// Created by windows on 2023/3/2.\n"
+                         "// Created by windows on 2024/3/18.\n"
                          "//\n"
                          "\n"
                          "#ifndef C___SOLUTION" + to_string(i) + "_H\n"
@@ -80,7 +80,7 @@ void GenerateFiles::handle_h_file(int i, int j, string path) {
             continue;
         }
         string context_old = "//\n"
-                         "// Created by windows on 2023/3/2.\n"
+                         "// Created by windows on 2024/3/18.\n"
                          "//\n"
                          "\n"
                          "#ifndef C___SOLUTION" + to_string(i) + "_H\n"
@@ -96,7 +96,7 @@ void GenerateFiles::handle_h_file(int i, int j, string path) {
                          "\n";
 
         string context_new = "//\n"
-                             "// Created by windows on 2023/3/10.\n"
+                             "// Created by windows on 2024/3/18.\n"
                              "//\n"
                              "\n"
                              "#ifndef C___SOLUTION_H\n"
@@ -207,9 +207,9 @@ int GenerateFiles::generate_files(int i, int j) {
         } else {
             std::cout << "Failed to create directory." << std::endl;
         }
-//        create_cpp_file(i, i + 99, str);
-//        create_h_file(i, i + 99, str);
-//        create_CMake_file(i, i + 99 ,str);
+        create_cpp_file(i, i + 99, str);
+        create_h_file(i, i + 99, str);
+        create_CMake_file(i, i + 99 ,str);
 //        handle_h_file(i, i + 99, str);
         handle_h_fileV2(i, i + 99, str);
     }
