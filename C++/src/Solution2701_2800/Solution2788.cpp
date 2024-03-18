@@ -10,3 +10,23 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+vector<string> splitWordsBySeparator(vector<string>& words, char separator) {
+    vector<string> res;
+
+    for (auto &word: words){
+        string str = "";
+        word += separator;
+        for (const auto &item: word){
+            if (item != separator){
+                str += item;
+            } else{
+                if (str.length() > 0){
+                    res.push_back(str);
+                    str = "";
+                }
+            }
+        }
+    }
+    return res;
+}

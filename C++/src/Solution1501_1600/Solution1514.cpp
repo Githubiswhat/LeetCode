@@ -2,86 +2,93 @@
 // Created by windows on 2023/3/2.
 //
 
-//#include "Solution1514.h"
-#include <functional>
+#include "Solution1514.h"
 #include <iostream>
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
 #include <string>
-#include <queue>
+#include <array>
+
 using namespace std;
 
-//double maxProbability(int n, vector<vector<int>>& edges, vector<double>& succProb, int start_node, int end_node) {
-//  vector<vector<double>> g(n, vector<double>(n, 0)); // 存储边的成功概率
-//  // 构建有向图
-//  for (int i = 0; i < edges.size(); ++i) {
-//    int from = edges[i][0];
-//    int to = edges[i][1];
-//    g[from][to] = succProb[i];
-//    g[to][from] = succProb[i]; // 因为边是双向的，所以需要把双向都赋值
-//  }
-//
-//  vector<double> possibility(n, 0); // 存储到每个节点的概率
-//  vector<bool> done(n, false); // 标记每个节点是否已经处理过
-//  possibility[start_node] = 1; // 起始节点的概率为1
-//
-//  while (true) {
-//    int x = -1;
-//    // 找到当前概率最大的未处理节点
-//    for (int i = 0; i < n; ++i) {
-//      if (!done[i] && (x == -1 || possibility[i] > possibility[x])) {
-//        x = i;
-//      }
+
+//int findRotateSteps(string ring, string key) {
+//    int n = ring.size(), m = key.size();
+//    int res = 0;
+//    int count = 0;
+//    int index = 0;
+//    while (count < m){
+//        if (ring[index] == key[count]){
+//            res++;
+//            count++;
+//            continue;
+//        }
+//        int left, right;
+//        for (left = index; left < index + n; ++left) {
+//            if (ring[left % n] == key[count]){
+//                break;
+//            }
+//        }
+//        for (right = index; right > index - n; --right) {
+//            if (ring[(n + right) % n] == key[count]){
+//                break;
+//            }
+//        }
+//        cout << index << "   : " << count << "   " ;
+//        cout << left << "  " << right << "   " << endl;
+//        if (abs(index - left) > abs(index - right)){
+//            res += abs(index - right);
+//            index = (n + right) % n;
+//        } else{
+//            res += abs(index - left);
+//            index = left % n;
+//        }
 //    }
-//
-//    // 如果没有未处理节点了，跳出循环
-//    if (x == -1) {
-//      break;
-//    }
-//
-//    // 标记节点为已处理
-//    done[x] = true;
-//
-//    // 更新与当前节点相连的节点的概率
-//    for (int i = 0; i < n; ++i) {
-//      if (g[x][i] > 0 && possibility[x] * g[x][i] > possibility[i]) {
-//        possibility[i] = possibility[x] * g[x][i];
-//      }
-//    }
-//  }
-//
-//  return possibility[end_node];
+//    return res;
 //}
 
-class Solution {
-public:
-  double maxProbability(int n, vector<vector<int>>& edges, vector<double>& succProb, int start, int end) {
-    vector<vector<pair<double, int>>> graph(n);
-    for (int i = 0; i < edges.size(); i++) {
-      auto& e = edges[i];
-      graph[e[0]].emplace_back(succProb[i], e[1]);
-      graph[e[1]].emplace_back(succProb[i], e[0]);
+int findRotateSteps(string s, string t) {
+    int n = s.length(), m = t.length();
+
+    // 先算出每个字母的最后一次出现的下标
+    // 由于 s 是环形的，循环结束后的 pos 就刚好是 left[0]
+    array<int, 26> pos; // 初始值不重要
+    for (int i = 0; i < n; i++) {
+        s[i] -= 'a';
+        pos[s[i]] = i;
+    }
+    // 计算每个 s[i] 左边 a-z 的最近下标（左边没有就从 n-1 往左找）
+    vector<array<int, 26>> left(n);
+    for (int i = 0; i < n; i++) {
+        left[i] = pos;
+        pos[s[i]] = i; // 更新下标
     }
 
-    priority_queue<pair<double, int>> que;
-    vector<double> prob(n, 0);
+    // 先算出每个字母的首次出现的下标
+    // 由于 s 是环形的，循环结束后的 pos 就刚好是 right[n-1]
+    for (int i = n - 1; i >= 0; i--) {
+        pos[s[i]] = i;
+    }
+    // 计算每个 s[i] 右边 a-z 的最近下标（左边没有就从 0 往右找）
+    vector<array<int, 26>> right(n);
+    for (int i = n - 1; i >= 0; i--) {
+        right[i] = pos;
+        pos[s[i]] = i; // 更新下标
+    }
 
-    que.emplace(1, start);
-    prob[start] = 1;
-    while (!que.empty()) {
-      auto [pr, node] = que.top();
-      que.pop();
-      if (pr < prob[node]) {
-        continue;
-      }
-      for (auto& [prNext, nodeNext] : graph[node]) {
-        if (prob[nodeNext] < prob[node] * prNext) {
-          prob[nodeNext] = prob[node] * prNext;
-          que.emplace(prob[nodeNext], nodeNext);
+    vector<vector<int>> f(m + 1, vector<int>(n));
+    for (int j = m - 1; j >= 0; j--) {
+        char c = t[j] - 'a';
+        for (int i = 0; i < n; i++) {
+            if (s[i] == c) { // 无需旋转
+                f[j][i] = f[j + 1][i];
+            } else { // 左边最近 or 右边最近，取最小值
+                int l = left[i][c], r = right[i][c];
+                f[j][i] = min(f[j + 1][l] + (l > i ? n - l + i : i - l),
+                              f[j + 1][r] + (r < i ? n - i + r : r - i));
+            }
         }
-      }
     }
-    return prob[end];
-  }
-};
+    return f[0][0] + m;
+}

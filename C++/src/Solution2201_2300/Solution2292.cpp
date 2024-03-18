@@ -10,3 +10,7 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+bool canWinNim(int n) {
+    return n % 4 != 0;
+}
