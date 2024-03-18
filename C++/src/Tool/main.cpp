@@ -2,24 +2,6 @@
 // Created by windows on 2023/3/1.
 //
 
-// ===================== GenerateFile ==================
-#include <iostream>
-#include "GenerateFiles.h"
-#include <functional>
-#include <iostream>
-#include <vector>
-#include <unordered_set>
-#include <unordered_map>
-#include <string>
-using namespace std;
-
-int main() {
-    GenerateFiles g;
-    g.generate_files(3001, 4000);
-}
-// =======================================
-
-
 // =====================Solution 5==================
 //#include <iostream>
 //#include "../Solution1_100/Solution5.h"

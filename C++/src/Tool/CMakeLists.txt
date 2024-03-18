@@ -37,6 +37,16 @@ set(LIBRARY
         Solution2701_2800
         Solution2801_2900
         Solution2901_3000
+        Solution3001_3100
+        Solution3101_3200
+        Solution3201_3300
+        Solution3301_3400
+        Solution3401_3500
+        Solution3501_3600
+        Solution3601_3700
+        Solution3701_3800
+        Solution3801_3900
+        Solution3901_4000
         )
 
 ## 添加库文件链接

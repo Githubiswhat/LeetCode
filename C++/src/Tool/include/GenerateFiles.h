@@ -13,14 +13,7 @@ using namespace std;
 
 class GenerateFiles {
 public:
-    void create_cpp_file(int i, int j, string path);
-    void create_h_file(int i, int j, string path);
-    void create_CMake_file(int i, int j, string path);
-    int generate_files(int i, int j);
-
-    void handle_h_file(int i, int j, string path);
-
-    void handle_h_fileV2(int i, int j, string path);
+    void generate_files(int i, int j);
 };
 
 #endif //C___GENERATEFILES_H
