@@ -10,3 +10,8 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+
+int distinctIntegers(int n) {
+  return n == 1 ? 0 : n - 1;
+}

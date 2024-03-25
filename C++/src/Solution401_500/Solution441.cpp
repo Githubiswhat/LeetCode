@@ -10,3 +10,12 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+int arrangeCoins(int n) {
+  int index = 1;
+  while (n >= index){
+    n -= index;
+    index++;
+  }
+  return index - 1;
+}

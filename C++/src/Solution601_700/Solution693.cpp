@@ -10,3 +10,16 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+bool hasAlternatingBits(int n) {
+    int pre = n & 1;
+    n >>= 1;
+    while (n) {
+        if ((n & 1) == pre) {
+            return false;
+        }
+        pre = n & 1;
+        n >>= 1;
+    }
+    return true;
+}

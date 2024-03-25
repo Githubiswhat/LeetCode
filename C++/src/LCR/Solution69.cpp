@@ -23,17 +23,28 @@ using namespace std;
 //   return 0;
 // }
 
-int peakIndexInMountainArray(vector<int> &arr) {
-  int left = -1, right = arr.size();
-  while (left < right - 1) {
-    int mid = (left + right) / 2;
-    if (arr[mid] < arr[mid + 1]) {
-      left = mid;
-    } else if (arr[mid] < arr[mid - 1]) {
-      right = mid;
-    } else {
-      return mid;
-    }
+//int peakIndexInMountainArray(vector<int> &arr) {
+//  int left = -1, right = arr.size();
+//  while (left < right - 1) {
+//    int mid = (left + right) / 2;
+//    if (arr[mid] < arr[mid + 1]) {
+//      left = mid;
+//    } else if (arr[mid] < arr[mid - 1]) {
+//      right = mid;
+//    } else {
+//      return mid;
+//    }
+//  }
+//  return arr[left] > arr[right] ? left : right;
+//}
+
+int mySqrt(int x) {
+  for (int i = 0; i <= x / 2; ++i) {
+    if (i * i <= x && (i + 1) * (i + 1) > x) {
+        return i;
+      }
   }
-  return arr[left] > arr[right] ? left : right;
+  return -1;
 }
+
+

@@ -10,3 +10,8 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+string convertToBase7(int num) {
+
+
+}

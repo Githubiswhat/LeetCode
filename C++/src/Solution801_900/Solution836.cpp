@@ -10,3 +10,8 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+bool isRectangleOverlap(vector<int>& rec1, vector<int>& rec2) {
+
+
+}
