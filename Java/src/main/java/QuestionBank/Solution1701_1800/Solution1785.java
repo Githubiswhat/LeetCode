@@ -1,8 +1,5 @@
 package QuestionBank.Solution1701_1800;
 
-import java.util.Arrays;
-import java.util.stream.IntStream;
-
 /**
  * @author windows
  */
