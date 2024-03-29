@@ -1,11 +1,7 @@
 package QuestionBank.Solution101_200;
 
-import com.ibm.dtfj.javacore.parser.j9.section.nativememory.INativeMemoryTypes;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 
 /**

@@ -1,8 +1,5 @@
 package QuestionBank.Solution001_100;
 
-import com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIterNodeList;
-import com.sun.xml.internal.ws.api.message.MessageWritable;
-
 /**
  * @author windows
  */

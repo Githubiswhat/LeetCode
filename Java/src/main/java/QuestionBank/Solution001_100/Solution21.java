@@ -1,7 +1,5 @@
 package QuestionBank.Solution001_100;
 
-import tool.ListNode;
-
 import java.util.ArrayList;
 import java.util.List;
 

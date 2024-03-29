@@ -1,7 +1,5 @@
 package QuestionBank.Solution101_200;
 
-import com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIterNodeList;
-
 import java.util.HashSet;
 
 /**

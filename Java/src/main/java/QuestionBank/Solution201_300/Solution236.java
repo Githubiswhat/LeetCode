@@ -1,11 +1,6 @@
 package QuestionBank.Solution201_300;
 
-import sun.reflect.generics.tree.Tree;
 import tool.TreeNode;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author windows

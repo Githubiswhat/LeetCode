@@ -1,7 +1,5 @@
 package QuestionBank.Solution101_200;
 
-import javax.naming.spi.ObjectFactory;
-
 /**
  * @author windows
  */

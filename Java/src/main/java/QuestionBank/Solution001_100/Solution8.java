@@ -1,7 +1,5 @@
 package QuestionBank.Solution001_100;
 
-import javax.xml.stream.events.Characters;
-
 /**
  * @author windows
  */

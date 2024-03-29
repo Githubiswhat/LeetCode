@@ -2,8 +2,6 @@ package QuestionBank.Solution001_100;
 
 import tool.ListNode;
 
-import javax.swing.plaf.metal.MetalBorders;
-
 /**
  * @author windows
  */

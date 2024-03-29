@@ -1,4 +1,4 @@
-active: WeeklyCompetition
+active: Solution
 Solution:
   path: src/main/java/Solution%d_%d/
   needFormat: true

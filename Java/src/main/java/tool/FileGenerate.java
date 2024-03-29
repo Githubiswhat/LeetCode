@@ -42,14 +42,39 @@ public class FileGenerate {
             dir.mkdirs();
         }
 
-        for (int i = begin; i <= end; i++) {
-            String fileName = path + "Solution" + i + ".java";
-            File file = new File(fileName);
-            if (!file.exists()) {
-                BufferedWriter out = new BufferedWriter(new FileWriter(file));
-                out.write(String.format(content, i, i, i, i));
-                out.close();
-                System.out.println("文件创建成功！");
+// 定义每个文件夹中文件的数量
+        int filesPerFolder = 100;
+
+// 计算文件夹数量
+        int numFolders = (end - begin + 1) / filesPerFolder;
+        if ((end - begin + 1) % filesPerFolder != 0) {
+            numFolders++;
+        }
+
+// 创建文件夹并移动文件
+        for (int folderIndex = 0; folderIndex < numFolders; folderIndex++) {
+            // 构造文件夹名字
+            int folderBegin = begin + folderIndex * filesPerFolder;
+            int folderEnd = Math.min(end, folderBegin + filesPerFolder - 1);
+            String folderName = path + "Solution" + folderBegin + "_" + folderEnd;
+            File folder = new File(folderName);
+            folder.mkdir(); // 创建文件夹
+
+            // 创建文件并移动到文件夹中
+            for (int i = folderBegin; i <= folderEnd; i++) {
+                String fileName = folderName + "/Solution" + i + ".java"; // 构造文件名
+                File file = new File(fileName);
+                if (!file.exists()) {
+                    try {
+                        BufferedWriter out = new BufferedWriter(new FileWriter(file));
+                        out.write(String.format(content, i, i, i, i));
+                        out.close();
+                        System.out.println("文件创建成功：" + fileName);
+                    } catch (IOException e) {
+                        System.out.println("文件创建失败：" + fileName);
+                        e.printStackTrace();
+                    }
+                }
             }
         }
     }

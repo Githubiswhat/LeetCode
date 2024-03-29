@@ -2,9 +2,6 @@ package QuestionBank.Solution001_100;
 
 import tool.ListNode;
 
-import javax.swing.*;
-import java.util.List;
-
 /**
  * @author windows
  */

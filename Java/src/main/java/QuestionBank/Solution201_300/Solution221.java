@@ -1,8 +1,6 @@
 package QuestionBank.Solution201_300;
 
 
-import java.nio.file.attribute.DosFileAttributes;
-
 /**
  * @author windows
  */

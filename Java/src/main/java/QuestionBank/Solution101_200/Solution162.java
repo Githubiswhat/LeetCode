@@ -1,7 +1,5 @@
 package QuestionBank.Solution101_200;
 
-import sun.awt.windows.WPrinterJob;
-
 /**
  * @author windows
  */

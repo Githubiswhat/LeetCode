@@ -3,8 +3,6 @@ package QuestionBank.Solution101_200;
 import tool.ListNode;
 
 import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
 
 /**
  * @author windows
