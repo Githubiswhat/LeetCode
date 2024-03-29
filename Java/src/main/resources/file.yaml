@@ -2,8 +2,8 @@ active: WeeklyCompetition
 Solution:
   path: src/main/java/Solution%d_%d/
   needFormat: true
-  fileBegin: 2601
-  fileEnd: 2700
+  fileBegin: 2701
+  fileEnd: 4000
 LCP:
   path: src/main/java/LCP/
   needFormat: false
