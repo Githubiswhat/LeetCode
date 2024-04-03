@@ -10,7 +10,6 @@ import java.util.Map;
  */
 public class TreeGenerate {
 
-
     public static TreeNode createTree(Integer[] array) {
         List<TreeNode> list = createTreeList(array, new ArrayList());
         // 构建二叉树
