@@ -2,7 +2,7 @@ use std::fs::{self, File};
 use std::io::Write;
 
 // 创建文件夹的函数
-pub fn create_folder(folder_name: &str) {
+fn create_folder(folder_name: &str) {
     match fs::create_dir(folder_name) {
         // 如果成功创建文件夹
         Ok(_) => println!("成功创建文件夹: {}", folder_name),
@@ -12,7 +12,7 @@ pub fn create_folder(folder_name: &str) {
 }
 
 // 在文件夹内创建100个文件的函数
-pub fn create_files_in_folder(folder_name: &str) {
+fn create_files_in_folder(folder_name: &str) {
     for i in 1..=100 {
         // 根据当前数字计算文件名
         let file_name = format!("{}/solution{}.rs", folder_name, i);
@@ -27,9 +27,10 @@ pub fn create_files_in_folder(folder_name: &str) {
     }
 }
 
-fn main() {
+
+pub fn generate_folder_file(start: i32, end: i32) {
     // 循环1000次，每次生成一个文件夹
-    for i in 1..=4000 {
+    for i in start..=end {
         // 检查是否需要生成一个新的文件夹
         if (i - 1) % 100 == 0 {
             // 根据当前数字计算文件夹名称
