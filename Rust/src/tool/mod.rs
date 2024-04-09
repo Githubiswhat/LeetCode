@@ -12,8 +12,8 @@ fn create_folder(folder_name: &str) {
 }
 
 // 在文件夹内创建100个文件的函数
-fn create_files_in_folder(folder_name: &str) {
-    for i in 1..=100 {
+fn create_files_in_folder(folder_name: &str, start: i32, end: i32) {
+    for i in start..=end {
         // 根据当前数字计算文件名
         let file_name = format!("{}/solution{}.rs", folder_name, i);
         // 创建文件并写入内容
@@ -38,7 +38,7 @@ pub fn generate_folder_file(start: i32, end: i32) {
             // 调用创建文件夹的函数
             create_folder(&folder_name);
             // 在文件夹内创建100个文件
-            create_files_in_folder(&folder_name);
+            create_files_in_folder(&folder_name, i, i + 99);
         }
     }
 }
