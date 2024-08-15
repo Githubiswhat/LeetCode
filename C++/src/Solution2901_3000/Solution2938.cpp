@@ -10,3 +10,16 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+long long minimumSteps(string s) {
+  long long ans = 0;
+  int cnt1 = 0;
+  for (char c : s) {
+    if (c == '1') {
+      cnt1++;
+    } else {
+      ans += cnt1;
+    }
+  }
+  return ans;
+}
